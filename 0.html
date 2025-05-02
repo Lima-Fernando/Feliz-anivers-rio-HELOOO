@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feliz Aniversário!</title>
+  <style>
+    body {
+      background-color: greenyellow;
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: nowrap;
+    }
+
+    .photo1, .photo2 {
+      flex: 0 0 150px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo1 img,
+    .photo2 img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 500px;
+      padding: 30px;
+      flex: 1;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e75480;
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    .cake {
+      font-size: 3em;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* RESPONSIVO: layout vertical em telas pequenas */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .photo1, .photo2 {
+        width: 80%;
+        flex: 0 0 auto;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo1">
+      <img src="caitlyn.helo.jpeg" alt="Foto 1">
+    </div>
+    <div class="card">
+      <div class="cake">⋆˖⁺‧₊☽◯☾₊‧⁺˖⋆</div>
+      <h1>Feliz Aniversário HELOOO!</h1>
+        <p>Desejo sempre sua alegria e agradeço muito por te-la como minha amiga!</p>
+        <p>FELIZ 19 ANOSS!!!</p>
+      <div class="footer">Com carinho do <strong>seu amigo dinossauro</strong></div>
+    </div>
+    <div class="photo2">
+      <img src="vi.helo.jpeg" alt="Foto 2">
+    </div>
+  </div>
+</body>
+</html>
